@@ -7,7 +7,7 @@ ob_start();
 
 ?>
 
-<form action="update.php" method="post">
+<form action="index.php?action=update" method="post">
     <div class="form-goup">
         <label>Id</label>
         <input type="hidden" class="form-control" name="id" value='<?= $stagiaire->id ?>'>

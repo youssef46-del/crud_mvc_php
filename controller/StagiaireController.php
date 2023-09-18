@@ -15,7 +15,7 @@ function createAction()
 function storeAction()
 {
     create();
-    header('location:index.php');
+    header('location:index.php?action=list');
 }
 
 
@@ -34,7 +34,7 @@ function updateAction()
     $login = $_POST['login'];
     $password = $_POST['password'];
     edit($id,$nom,$prenom,$login,$password);
-    header('location:index.php');
+    header('location:index.php?action=list');
 }
 
 function deleteAction()
@@ -46,7 +46,7 @@ function destroyAction()
 {
     $id = $_GET['id'];
     destroy($id);
-    header('location:index.php');
+    header('location:index.php?action=list');
 }
 
 

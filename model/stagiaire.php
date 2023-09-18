@@ -24,8 +24,7 @@ function edit($id,$nom,$prenom,$login,$password)
     $sqlState = $pdo->prepare("UPDATE stagiaire SET nom = ? ,
                                                     prenom = ? ,
                                                     login = ? ,  
-                                                    password = ? 
-                                                    WHERE id = ? ");
+                                                    password = ?  WHERE id = ? ");
     return $sqlState->execute([$nom, $prenom, $login, $password, $id]);
 }
 

@@ -7,7 +7,7 @@ ob_start();
 
 ?>
 
-<a href="create.php" class="btn btn-primary">Ajouter</a>
+<a href="index.php?action=create" class="btn btn-primary">Ajouter</a>
 <table class="table table-striped">
 <thead>
     <tr>
@@ -28,8 +28,8 @@ ob_start();
             <td><?php echo $stagiaire->login ?></td>
             <td>
                 
-                <a href="edit.php?id=<?= $stagiaire->id ?>" class="btn btn-success btn-sm">Modifier</a>
-                <a href="delete.php?id=<?= $stagiaire->id ?>" class="btn btn-danger btn-sm">Supprimer</a>
+                <a href="index.php?action=edit&id=<?= $stagiaire->id ?>" class="btn btn-success btn-sm">Modifier</a>
+                <a href="index.php?action=delete&id=<?= $stagiaire->id ?>" class="btn btn-danger btn-sm">Supprimer</a>
                 
             </td>
         </tr>
